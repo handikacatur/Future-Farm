@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DFF4FA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* component colors start*/
+.text-base {
+    color: #371337;
+}
+
+.text-primary {
+    color: #01D7D7;
+}
+
+.text-danger {
+    color: #E62E64;
+}
+
+.text-warning {
+    color: #FFC564;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-base {
+    color: #371337;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-primary {
+    background-color: #01D7D7;
+}
+
+.bg-warning {
+    background-color: #FFC564;
+}
+
+.bg-danger {
+    background-color: #E62E64;
+}
+/* End text colors */
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    width: 130px;
+    height: 40px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 5px 0px rgb(168, 168, 168);
+    border-radius: 9px;
+}
+
+.btn-round {
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.btn-large {
+    width: 200px;
+    height: 70px;
+}
+
+.navbar {
+    background-color: #DFF4FA;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100px;
+}
+
+.navbar .brand-logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.navbar .brand-text {
+    color: #371337;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.navbar ul {
+    width: 40%;
+    list-style: none;
+}
+
+.navbar ul a {
+    color: #371337;
+}
+
+.navbar ul a:hover {
+    border-bottom: 1px solid #371337;
+}
+
+.navbar ul a.active {
+    font-weight: 600;
+    border-bottom: 3px solid #371337;
+}
+
+.section {
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.description {
+    max-width: 800px;
+}
+
+.hero-picture img{
+    max-width: 700px;
+}
+
+.feature-items {
+    width: 600px;
+    margin: 15px;
+    margin-bottom: 80px;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.feature-title {
+    font-weight: 600;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    width: 350px;
+    margin: 50px;
+    padding: 20px;
+    padding-bottom: 80px;
+    border-radius: 16px;
+    box-shadow: 2px 4px 4px 0px rgb(110, 110, 110);
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card .card-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card .card-content {
+    font-size: 28px;
+}
+
+footer {
+    background-color: rgb(99, 99, 99);
+    padding: 50px;
+}
+
+footer .footer-brand-logo {
+    max-width: 50px;
+    margin-right: 15px;
+}
+
+footer .footer-brand-text {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    margin: 15px;
+}
