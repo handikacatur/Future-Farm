@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/font-awesome/all.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>Future Farm | Login</title>
+    <title>Future Farm | Sign In</title>
 </head>
 <body>
     <nav class="navbar flex justify-content-space-between align-items-center">
@@ -23,34 +23,36 @@
         </ul>
     </nav>
     <section id="login" class="section flex justify-content-space-between align-items-center">
-        <div class="description-login">
+        <div class="description-login" style="margin-top: -100px;">
             <h1 class="text-base" style="font-size: 60px;">Selamat Datang<br>Kembali!</h1>
         </div>
  
         <div class="container form bg-white section" style="margin-top: 0%;">
             <h1 class = "flex flex-direction-column align-items-center" style="padding-top: 60px; padding-bottom: 70px; ">Masuk</h1>
-            <table>
-                <tr>
-                    <th class="label-form flex align-self-flex-start">
-                        <label for="email-login">Alamat Email:</label>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="email" class="text-form form-box bg-form text-base flex justify-content-center">
-                    </td>
-                </tr>
-                <tr>
-                    <th class="label-form flex align-self-flex-start">
-                        <label for="password-login">Password:</label>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="password" class="text-form form-box bg-form text-base flex justify-content-center">
-                    </td>
-                </tr>
-            </table>
+            <form action="action="/action_page.php">
+                <table>
+                    <tr>
+                        <th class="label-form flex align-self-flex-start">
+                            <label for="email-login">Alamat Email :</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" class="text-form form-box bg-form text-base flex justify-content-center">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="label-form flex align-self-flex-start">
+                            <label for="password-login">Password :</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" class="text-form form-box bg-form text-base flex justify-content-center">
+                        </td>
+                    </tr>
+                </table>
+            </form>
             <div>
                 <a href="#" class="label-form text-primary ">Lupa Password?</a>
                 <a href="#" class="btn btn-form bg-primary text-white" style="margin: auto; margin-top: 60px; margin-bottom: 50px;">MASUK SEKARANG</a>
