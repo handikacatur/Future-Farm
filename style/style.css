@@ -53,6 +53,10 @@ a {
 .bg-danger {
     background-color: #E62E64;
 }
+
+.bg-form {
+    background-color: #E0E0E0;
+}
 /* End text colors */
 
 .flex {
@@ -87,6 +91,10 @@ a {
     flex-direction: column;
 }
 
+.flex-direction-row {
+    flex-direction: row;
+}
+
 .text-center {
     text-align: center;
 }
@@ -116,6 +124,11 @@ a {
 .btn-large {
     width: 200px;
     height: 70px;
+}
+
+.btn-form {
+    width: 650px;
+    height: 78px;
 }
 
 .navbar {
@@ -243,4 +256,32 @@ footer ul {
 
 footer ul li {
     margin: 15px;
+}
+
+.form {
+    height: 750px;
+    width: 650px;
+    border-radius: 20px;
+    margin-bottom: 150px;
+}
+
+.label-form {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.form-box {
+    width: 580px;
+    height: 78px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.text-form {
+    font-size: 25px;
+    font-weight: 200;
+    padding-left: 30px;
+    padding-right: 30px;
 }
