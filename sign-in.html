@@ -22,17 +22,17 @@
             <li><a class="btn btn-round bg-white text-base active" href="sign-in.html">Masuk</a></li>
         </ul>
     </nav>
-    <section id="login" class="section flex justify-content-space-between align-items-center">
-        <div class="description-login" style="margin-top: -100px;">
+    <section id="signin" class="section flex justify-content-space-between align-items-center">
+        <div class="description-login" style="margin-top: -200px;">
             <h1 class="text-base" style="font-size: 60px;">Selamat Datang<br>Kembali!</h1>
         </div>
     
-        <div class="container form bg-white section" style="margin-top: 0%;">
+        <div class="card" style="margin-top: 0%; margin-right: 0px; margin-bottom: 150px;">
             <h1 class = "flex flex-direction-column align-items-center" style="padding-top: 60px; padding-bottom: 70px; ">Masuk</h1>
-            <form action="action="/action_page.php">
+            <form action="action="/action_page.php" style="margin-left: 20px; margin-right: 20px;">
                 <table>
                     <tr>
-                        <th class="label-form flex align-self-flex-start">
+                        <th class="label-form flex align-self-flex-start text-base">
                             <label for="email-login">Alamat Email :</label>
                         </th>
                     </tr>
@@ -42,7 +42,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th class="label-form flex align-self-flex-start">
+                        <th class="label-form flex align-self-flex-start text-base">
                             <label for="password-login">Password :</label>
                         </th>
                     </tr>
@@ -52,12 +52,13 @@
                         </td>
                     </tr>
                 </table>
+            
+                <div>
+                    <a href="#" id="link-hover" class="label-form text-primary ">Lupa Password?</a>
+                    <a href="#" class="btn btn-form bg-primary text-white" style="margin: auto; margin-top: 60px; margin-bottom: 50px;">MASUK SEKARANG</a>
+                    <a href="sign-up.html" id="link-hover" class="label-form text-primary flex justify-content-center">Belum punya akun? Klik link untuk daftar.</a>
+                </div>
             </form>
-            <div>
-                <a href="#" class="label-form text-primary ">Lupa Password?</a>
-                <a href="#" class="btn btn-form bg-primary text-white" style="margin: auto; margin-top: 60px; margin-bottom: 50px;">MASUK SEKARANG</a>
-                <a href="sign-up.html" class="label-form text-primary flex justify-content-center">Belum punya akun? Klik link untuk daftar.</a>
-            </div>
         </div>
     </section>
     <footer class="flex flex-wrap align-self-flex-start justify-content-space-between">

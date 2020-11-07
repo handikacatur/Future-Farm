@@ -22,17 +22,17 @@
             <li><a class="btn btn-round bg-white text-base active" href="sign-in.html">Masuk</a></li>
         </ul>
     </nav>
-    <section id="login" class="section flex justify-content-space-between align-items-center">
-        <div class="description-login" style="margin-top: -100px;">
+    <section id="signup" class="section flex justify-content-space-between align-items-center">
+        <div class="description-login" style="margin-top: -680px;">
             <h1 class="text-base" style="font-size: 60px;">Mulai<br>berinvestasi<br>atau mencari<br>investor.</h1>
         </div>
     
-        <div class="container form-sign-up bg-white section" style="margin-top: 0%;">
-            <h1 class = "flex flex-direction-column align-items-center" style="padding-top: 60px; padding-bottom: 70px; ">Masuk</h1>
-            <form action="action="/action_page.php">
+        <div class="card" style="margin-top: 0%; margin-bottom: 150px; margin-right: 0px;">
+            <h1 class = "flex flex-direction-column align-items-center text-base" style="padding-top: 60px; padding-bottom: 70px; ">Masuk</h1>
+            <form action="action="/action_page.php" style="margin-left: 20px; margin-right: 20px;">
                 <table>
                     <tr>
-                        <th class="label-form flex align-self-flex-start">
+                        <th class="label-form flex align-self-flex-start text-base">
                             <label for="firstname">Nama Depan :</label>
                         </th>
                     </tr>
@@ -42,7 +42,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th class="label-form flex align-self-flex-start">
+                        <th class="label-form flex align-self-flex-start text-base">
                             <label for="lastname">Nama Belakang :</label>
                         </th>
                     </tr>
@@ -52,7 +52,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th class="label-form flex align-self-flex-start">
+                        <th class="label-form flex align-self-flex-start text-base">
                             <label for="email-login">Alamat Email :</label>
                         </th>
                     </tr>
@@ -62,7 +62,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th class="label-form flex align-self-flex-start">
+                        <th class="label-form flex align-self-flex-start text-base">
                             <label for="password-login">Password :</label>
                         </th>
                     </tr>
@@ -72,35 +72,36 @@
                         </td>
                     </tr>
                     <tr>
-                        <th class="label-form flex align-self-flex-start">
+                        <th class="label-form flex align-self-flex-start text-base">
                             <label for="phonenumber">No Telepon :</label>
                         </th>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="text-form form-box bg-form text-base flex justify-content-center">
+                            <input type="tel" class="text-form form-box bg-form text-base flex justify-content-center">
                         </td>
                     </tr>
                     <tr>
-                        <th class="label-form flex align-self-flex-start">
+                        <th class="label-form flex align-self-flex-start text-base">
                             <label for="role">Saya ingin mendaftar sebagai :</label>
                         </th>
                     </tr>
                     <tr>
                         <td>
                             <select name="select-role" id="role" class="text-form form-box bg-form text-base flex justify-content-center" style="width: 643px;">
+                                <option value="volvo"></option>
                                 <option value="volvo">Petani</option>
-                                <option value="saab">Investor<option>
+                                <option value="saab">Investor</option>
                             </select>
                         </td>
                     </tr>
                 </table>
+                <div>
+                    <!-- <a href="#" class="label-form text-primary ">Lupa Password?</a> -->
+                    <a href="#" class="btn btn-form bg-primary text-white" style="margin: auto; margin-top: 60px; margin-bottom: 50px;">MASUK SEKARANG</a>
+                    <a href="sign-in.html" id="link-hover" class="label-form text-primary flex justify-content-center">Sudah punya akun? Klik link untuk masuk.</a>
+                </div>
             </form>
-            <div>
-                <!-- <a href="#" class="label-form text-primary ">Lupa Password?</a> -->
-                <a href="#" class="btn btn-form bg-primary text-white" style="margin: auto; margin-top: 60px; margin-bottom: 50px;">MASUK SEKARANG</a>
-                <a href="sign-in.html" class="label-form text-primary flex justify-content-center">Sudah punya akun? Klik link untuk masuk.</a>
-            </div>
         </div>
     </section>
     <footer class="flex flex-wrap align-self-flex-start justify-content-space-between">
