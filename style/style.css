@@ -277,7 +277,6 @@ footer ul li {
 }
 
 .form {
-    position: relative;
     height: 750px;
     width: 650px;
     border-radius: 20px;
@@ -285,7 +284,6 @@ footer ul li {
 }
 
 .form-sign-up {
-    position: relative;
     height: 1300px;
     width: 650px;
     border-radius: 20px;
