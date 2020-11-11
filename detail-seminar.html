@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/font-awesome/all.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>Future Farm | Layanan</title>
+    <title>Future Farm | Detail Seminar</title>
 </head>
 <body>
     <nav class="navbar flex justify-content-space-between align-items-center">
@@ -16,51 +16,62 @@
         </div>
         <ul class="nav-links flex justify-content-space-between align-items-center">
             <li><a href="index.html">Beranda</a></li>
-            <li><a class="active" href="layanan.html">Layanan</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
             <li><a href="seminar.html">Seminar</a></li>
             <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
+            <li><a class="btn btn-round bg-white text-base" href="#">Masuk</a></li>
         </ul>
     </nav>
-    <section id="hero" class="section flex flex-wrap justify-content-space-between align-items-center" style="margin-bottom: 200px;">
-        <h3 class="text-base text-center" style="width: 100%; font-size: 30px; padding: 50px; padding-top: 10px; margin-bottom: 30px;">Mengapa kami?</h3>
-        <div class="description">
-            <h1 class="text-base">Kemudahan</h1>
-            <p class="text-base" style="margin-top: 30px; margin-bottom: 30px;">Kami menyediakan fitur bagi para investor untuk memilih sendiri perusahaan mana yang menurut mereka dapat memenuhi target mereka. Dengan begitu, pengusaha tidak perlu berrsusah payah mencari investor. Hal yang dapat dilakukan pengusaha adalah dengan meningkatkan kualitas produksinya sehingga banyak investor yang tertarik.</p>
+    <section id="hero" class="section flex flex-wrap align-items-center" style="margin-bottom: 200px;">
+        <div class="seminar-title flex align-items-center">
+            <div class="seminar-cover">
+                <div class="card">
+                    <div class="card-cap">
+                        <img src="img/seminar-cover.jpg" alt="cover-seminar" style="max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="seminar-header flex flex-direction-column justify-content-space-between" style="height: 150px;">
+                <h2>Memulai Hidroponik</h2>
+                <h4>Pembicara: Muhammad Subill Gates</h4>
+                <p>Sisa kuota: <strong>256 Peserta</strong></p>
+            </div>
         </div>
-        <div class="hero-picture">
-            <img src="img/share-money.png" alt="hero">
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="hero-picture">
-            <img src="img/shield.png" alt="hero">
-        </div>
-        <div class="description">
-            <h1 class="text-base">Keamanan</h1>
-            <p class="text-base" style="margin-top: 30px; margin-bottom: 30px;">Setiap pengusaha Hidroponik mitra harus mempunyai surat-surat yang dibutuhkan seperti SIUP dan NPWP. Selain itu, usahanya harus sudah terdaftar pada dinas pertanian setempat.</p>
-        </div>
-        
-        <div class="divider"></div>
-
-        <div class="description">
-            <h1 class="text-base">Bagi hasil yang menguntungkan kedua pihak</h1>
-            <p class="text-base" style="margin-top: 30px; margin-bottom: 30px;">Pengusaha wajib membayarkan setoran tiap bulan. Pengusaha memperoleh keuntungan sebanyak 15% per setoran.</p>
-        </div>
-        <div class="hero-picture">
-            <img src="img/share-money.png" alt="hero">
+        <div class="divider-line"></div>
+        <div class="seminar-description bg-white">
+            <div class="seminar-deskripsi">
+                <h3>Deskripsi:</h3>
+                <p>Jadwal Pelaksanaan: Jumat, 10 September 2020</p>
+                <p>Link meeting: Dikirim melalui email</p>
+            </div>
+            <div class="seminar-isi">
+                <h3>Isi yang akan disampaikan:</h3>
+                <ol>
+                    <li>Apa itu Hidroponik?</li>
+                    <li>Macam-macam sistem Hidroponik</li>
+                    <li>Cara mengatur kadar nutrisi pada air</li>
+                    <li>Mendeteksi dan mengatasi kadar pH air</li>
+                </ol>
+                <a href="#" class="btn btn-large bg-primary text-white" style="margin-top: 50px;">DAFTAR</a>
+            </div>
         </div>
     </section>
+
+    <!-- Modal  -->
+    <div id="modal" class="modal">
+
+    </div>
+    <!-- End Modal -->
+
     <footer class="flex flex-wrap align-self-flex-start justify-content-space-between">
         <div class="footer-logo flex align-items-center text-white">
             <img class="footer-brand-logo" src="img/logo/logo.png" alt="ff-logo">
             <span class="footer-brand-text"><strong>Future</strong> Farm</span>
         </div>
         <ul>
-            <li><a class="text-white" href="index.html">Beranda</a></li>
-            <li><a class="text-white" href="layanan.html">Layanan</a></li>
-            <li><a class="text-white" href="seminar.html">Seminar</a></li>
+            <li><a class="text-white" href="#">Beranda</a></li>
+            <li><a class="text-white" href="#">Layanan</a></li>
+            <li><a class="text-white" href="#">Seminar</a></li>
             <li><a class="text-white" href="#">Tentang Kami</a></li>
         </ul>
         <ul class="text-white">
