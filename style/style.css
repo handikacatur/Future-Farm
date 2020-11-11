@@ -262,9 +262,10 @@ a {
 .card {
     display: flex;
     background-color: white;
-    width: 350px;
-    padding: 0px;
-    overflow: hidden;
+    /* width: 350px; */
+    margin: 50px;
+    padding: 20px;
+    padding-bottom: 80px;
     border-radius: 16px;
     box-shadow: 2px 4px 4px 0px rgb(110, 110, 110);
     box-sizing: border-box;
@@ -324,28 +325,36 @@ footer ul li {
     margin: 15px;
 }
 
-.form {
-    height: 750px;
-    width: 650px;
-    border-radius: 20px;
-    margin-bottom: 150px;
-}
-
-.label-form {
+.card .label-form {
+    /* position: absolute; */
     font-size: 15px;
     font-weight: 600;
     padding-bottom: 10px;
 }
 
-.form-box {
+.card .form-box {
+    /* position: absolute; */
     width: 580px;
     height: 78px;
     margin-bottom: 30px;
     border: none;
     border-radius: 10px;
+    outline-style: none;
 }
 
-.text-form {
+.card .form-box:hover{
+    background-color: rgb(190, 190, 190);
+}
+
+/* gaerti carae ngganti warna biru ndek select sign up #role:hover{
+    colo
+} */
+
+#link-hover:hover{
+    color: #371337;
+}
+.card .text-form {
+    /* position: absolute; */
     font-size: 25px;
     font-weight: 200;
     padding-left: 30px;

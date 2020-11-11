@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/font-awesome/all.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>Future Farm | Layanan</title>
+    <title>Future Farm | Beranda</title>
 </head>
 <body>
     <nav class="navbar flex justify-content-space-between align-items-center">
@@ -16,40 +16,49 @@
         </div>
         <ul class="nav-links flex justify-content-space-between align-items-center">
             <li><a href="index.html">Beranda</a></li>
-            <li><a class="active" href="layanan.html">Layanan</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
             <li><a href="seminar.html">Seminar</a></li>
             <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
+            <li><a class="btn btn-round bg-white text-base active" href="sign-in.html">Masuk</a></li>
         </ul>
     </nav>
-    <section id="hero" class="section flex flex-wrap justify-content-space-between align-items-center" style="margin-bottom: 200px;">
-        <h3 class="text-base text-center" style="width: 100%; font-size: 30px; padding: 50px; padding-top: 10px; margin-bottom: 30px;">Mengapa kami?</h3>
-        <div class="description">
-            <h1 class="text-base">Kemudahan</h1>
-            <p class="text-base" style="margin-top: 30px; margin-bottom: 30px;">Kami menyediakan fitur bagi para investor untuk memilih sendiri perusahaan mana yang menurut mereka dapat memenuhi target mereka. Dengan begitu, pengusaha tidak perlu berrsusah payah mencari investor. Hal yang dapat dilakukan pengusaha adalah dengan meningkatkan kualitas produksinya sehingga banyak investor yang tertarik.</p>
+    <section id="signin" class="section flex justify-content-space-between align-items-center">
+        <div class="description-login" style="margin-top: -200px;">
+            <h1 class="text-base" style="font-size: 60px;">Selamat Datang<br>Kembali!</h1>
         </div>
-        <div class="hero-picture">
-            <img src="img/share-money.png" alt="hero">
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="hero-picture">
-            <img src="img/shield.png" alt="hero">
-        </div>
-        <div class="description">
-            <h1 class="text-base">Keamanan</h1>
-            <p class="text-base" style="margin-top: 30px; margin-bottom: 30px;">Setiap pengusaha Hidroponik mitra harus mempunyai surat-surat yang dibutuhkan seperti SIUP dan NPWP. Selain itu, usahanya harus sudah terdaftar pada dinas pertanian setempat.</p>
-        </div>
-        
-        <div class="divider"></div>
-
-        <div class="description">
-            <h1 class="text-base">Bagi hasil yang menguntungkan kedua pihak</h1>
-            <p class="text-base" style="margin-top: 30px; margin-bottom: 30px;">Pengusaha wajib membayarkan setoran tiap bulan. Pengusaha memperoleh keuntungan sebanyak 15% per setoran.</p>
-        </div>
-        <div class="hero-picture">
-            <img src="img/share-money.png" alt="hero">
+    
+        <div class="card" style="margin-top: 0%; margin-right: 0px; margin-bottom: 150px;">
+            <h1 class = "flex flex-direction-column align-items-center" style="padding-top: 60px; padding-bottom: 70px; ">Masuk</h1>
+            <form action="action="/action_page.php" style="margin-left: 20px; margin-right: 20px;">
+                <table>
+                    <tr>
+                        <th class="label-form flex align-self-flex-start text-base">
+                            <label for="email-login">Alamat Email :</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" class="text-form form-box bg-form text-base flex justify-content-center">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="label-form flex align-self-flex-start text-base">
+                            <label for="password-login">Password :</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" class="text-form form-box bg-form text-base flex justify-content-center">
+                        </td>
+                    </tr>
+                </table>
+            
+                <div>
+                    <a href="#" id="link-hover" class="label-form text-primary ">Lupa Password?</a>
+                    <a href="#" class="btn btn-form bg-primary text-white" style="margin: auto; margin-top: 60px; margin-bottom: 50px;">MASUK SEKARANG</a>
+                    <a href="sign-up.html" id="link-hover" class="label-form text-primary flex justify-content-center">Belum punya akun? Klik link untuk daftar.</a>
+                </div>
+            </form>
         </div>
     </section>
     <footer class="flex flex-wrap align-self-flex-start justify-content-space-between">
