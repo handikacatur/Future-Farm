@@ -262,13 +262,11 @@ a {
 .card {
     display: flex;
     background-color: white;
-    /* width: 350px; */
     margin: 50px;
-    padding: 20px;
-    padding-bottom: 80px;
     border-radius: 16px;
     box-shadow: 2px 4px 4px 0px rgb(110, 110, 110);
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .card .card-cap {
@@ -346,10 +344,6 @@ footer ul li {
     background-color: rgb(190, 190, 190);
 }
 
-/* gaerti carae ngganti warna biru ndek select sign up #role:hover{
-    colo
-} */
-
 #link-hover:hover{
     color: #371337;
 }
@@ -389,14 +383,74 @@ footer ul li {
 
 /* Modal */
 .modal {
+    width: 0;
+    height: 0;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.507);
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s ease;
+    overflow-y: auto;
 }
 
-.modal .open {
-    top: 0;
-    left: 0;
+.modal.open {
+    width: auto;
+    height: auto;
     bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+    transition: .3s ease;
+}
+
+.modal .close-modal {
+    position: absolute;
     right: 0;
+    margin: 20px;
+}
+
+.modal .card {
+    opacity: 0;
+}
+
+.modal .card.animate {
+    animation: fade-in .3s ease .3s forwards;
+}
+
+.modal .form-control {
+    margin-bottom: 15px;
+}
+
+.modal label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal .form-control input {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    outline-style: none;
+    box-sizing: border-box;
+}
+
+.modal .form-control .btn {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 40px;
 }
 /* End Modal */
+
+/* Animation */
+@keyframes fade-in {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

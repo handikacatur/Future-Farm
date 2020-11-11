@@ -24,11 +24,9 @@
     </nav>
     <section id="hero" class="section flex flex-wrap align-items-center" style="margin-bottom: 200px;">
         <div class="seminar-title flex align-items-center">
-            <div class="seminar-cover">
-                <div class="card">
-                    <div class="card-cap">
-                        <img src="img/seminar-cover.jpg" alt="cover-seminar" style="max-width: 100%;">
-                    </div>
+            <div class="seminar-cover" style="max-width: 700px;">
+                <div class="card" style="margin-left: 0px;">
+                    <img src="img/seminar-cover.jpg" alt="cover-seminar" style="max-width: 100%;">
                 </div>
             </div>
             <div class="seminar-header flex flex-direction-column justify-content-space-between" style="height: 150px;">
@@ -52,14 +50,40 @@
                     <li>Cara mengatur kadar nutrisi pada air</li>
                     <li>Mendeteksi dan mengatasi kadar pH air</li>
                 </ol>
-                <a href="#" class="btn btn-large bg-primary text-white" style="margin-top: 50px;">DAFTAR</a>
+                <a href="#modal" class="btn btn-large bg-primary text-white" style="margin-top: 50px;" onclick="modalToggle()">DAFTAR</a>
             </div>
         </div>
     </section>
 
     <!-- Modal  -->
     <div id="modal" class="modal">
-
+        <a href="#" class="close-modal" onclick="modalToggle()">
+            <span class="fa fa-times text-white fa-2x"></span>
+        </a>
+        <div class="card flex-direction-column" style="max-width: 800px; padding: 0px 80px 80px 80px; margin: auto; margin-top: 5%; margin-bottom: 100px;">
+            <h2 class="text-center" style="margin-top: 40px; margin-bottom: 60px;">Daftar Seminar</h2>
+            <form>
+                <div class="form-control">
+                    <label for="nama-depan">Nama Depan</label>
+                    <input type="text" id="nama-depan" class="text-form bg-form text-base">
+                </div>
+                <div class="form-control">
+                    <label for="nama-belakang">Nama Belakang</label>
+                    <input type="text" id="nama-belakang" class="text-form bg-form text-base">
+                </div>
+                <div class="form-control">
+                    <label for="alamat-email">Alamat Email</label>
+                    <input type="text" id="alamat-email" class="text-form bg-form text-base">
+                </div>
+                <div class="form-control">
+                    <label for="alasan">Alasan mengikuti seminar</label>
+                    <input type="text" id="alasan" class="text-form bg-form text-base">
+                </div>
+                <div class="form-control">
+                    <a href="#" class="btn btn-large bg-primary text-white" onclick="submitSeminar()">DAFTAR SEKARANG</a>
+                </div>
+            </form>
+        </div>
     </div>
     <!-- End Modal -->
 
