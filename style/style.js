@@ -24,3 +24,11 @@ const submitSeminar = () => {
     </div>
     `
 }
+
+const burgerMenu = document.getElementsByClassName('burger-menu')[0];
+const navMobile = document.getElementsByClassName('navbar-mobile')[0];
+
+burgerMenu.addEventListener('click', () => {
+    burgerMenu.classList.toggle('open');
+    navMobile.classList.toggle('open')
+});

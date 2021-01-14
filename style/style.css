@@ -174,8 +174,15 @@ a {
 }
 
 .btn-form {
-    width: 650px;
-    height: 78px;
+    width: 100%;
+    height: 60px;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    height: 0;
+    background-color: blue;
 }
 
 .navbar {
@@ -183,12 +190,9 @@ a {
     padding-left: 50px;
     padding-right: 50px;
     height: 100px;
-    position: sticky;
-    left: 0;
-    right: 0;
-    top: 0;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    z-index: 99999;
 }
 
 .navbar.shadow {
@@ -206,7 +210,7 @@ a {
     font-weight: 500;
 }
 
-.navbar ul {
+.navbar .nav-links {
     width: 50%;
     list-style: none;
 }
@@ -228,22 +232,119 @@ a {
     border-bottom: 3px solid #371337;
 }
 
+.navbar-mobile {
+    display: none;
+    background-color: #dff4fae5;
+    padding-left: 50px;
+    padding-right: 50px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transform: translateY(-500px);
+    transition: all .3s ease;
+}
+
+.navbar-mobile.open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-mobile .nav-mobile {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-mobile .nav-mobile li {
+    margin: 10px;
+}
+
+.navbar-mobile ul a {
+    color: #371337;
+}
+
+.navbar-mobile ul a:hover {
+    border-bottom: 1px solid #371337;
+}
+
+.navbar-mobile ul a.btn:hover{
+    border: none;
+}
+
+.navbar-mobile ul a.active {
+    font-weight: 600;
+    border-bottom: 3px solid #371337;
+}
+
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+.burger-menu-strip {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.burger-menu-strip:nth-child(2) {
+    width: 80%;
+}
+
+.burger-menu.open .burger-menu-strip:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+}
+
+.burger-menu.open .burger-menu-strip:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.open .burger-menu-strip:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+}
+
 .section {
     margin-top: 100px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
+#hero {
+    margin-top: 200px;
+}
+
+#intro {
+    margin-top: 200px;
+}
+
 .description {
     max-width: 800px;
 }
 
-.hero-picture img{
+.hero-picture{
     max-width: 700px;
 }
 
+.hero-picture img {
+    width: 100%;
+}
+
 .feature-items {
-    width: 600px;
+    max-width: 600px;
     margin: 15px;
     margin-bottom: 80px;
 }
@@ -300,6 +401,10 @@ a {
     margin-bottom: 20px;
 }
 
+.progress {
+    width: 360px;
+}
+
 footer {
     background-color: rgb(99, 99, 99);
     padding: 50px;
@@ -331,10 +436,10 @@ footer ul li {
 
 .card .form-box {
     width: 100%;
-    height: 78px;
+    height: 60px;
     margin-bottom: 30px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     outline-style: none;
     box-sizing: border-box;
 }
@@ -343,11 +448,15 @@ footer ul li {
     background-color: rgb(190, 190, 190);
 }
 
+.card .form-box:focus{
+    background-color: rgb(190, 190, 190);
+}
+
 #link-hover:hover{
     color: #371337;
 }
 .card .text-form {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
     padding-left: 30px;
     padding-right: 30px;
@@ -444,6 +553,51 @@ footer ul li {
     margin-top: 40px;
 }
 /* End Modal */
+
+/* Media Queries */
+@media only screen and (max-width: 1245px) {
+    .navbar .nav-links {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1077px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .flex-direction-row {
+        flex-direction: column;
+    }
+
+    #hero .description {
+        text-align: center;
+    }
+
+    #hero .description a {
+        margin: auto;
+    }
+
+    .hero-picture {
+        margin-top: 50px;
+    }
+
+    .description-login {
+        text-align: center;
+    }
+}
 
 /* Animation */
 @keyframes fade-in {

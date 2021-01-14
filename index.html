@@ -9,20 +9,36 @@
     <title>Future Farm | Beranda</title>
 </head>
 <body>
-    <nav class="navbar flex justify-content-space-between align-items-center">
-        <div class="nav-brand flex align-items-center">
-            <img class="brand-logo" src="img/logo/logo.png" alt="ff-logo">
-            <span class="brand-text"><strong>Future</strong> Farm</span>
-        </div>
-        <ul class="nav-links flex justify-content-space-between align-items-center">
-            <li><a class="active" href="#">Beranda</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a href="seminar.html">Seminar</a></li>
-            <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
-        </ul>
-    </nav>
-    <section id="hero" class="section flex justify-content-space-between align-items-center">
+    <div class="nav">
+        <nav class="navbar flex justify-content-space-between align-items-center">
+            <div class="nav-brand flex align-items-center">
+                <img class="brand-logo" src="img/logo/logo.png" alt="ff-logo">
+                <span class="brand-text"><strong>Future</strong> Farm</span>
+            </div>
+            <ul class="nav-links flex justify-content-space-between align-items-center">
+                <li><a class="active" href="#">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="seminar.html">Seminar</a></li>
+                <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
+            </ul>
+            <div class="burger-menu flex">
+                <div class="burger-menu-strip"></div>
+                <div class="burger-menu-strip"></div>
+                <div class="burger-menu-strip"></div>
+            </div>
+        </nav>
+        <nav class="navbar-mobile">
+            <ul class="nav-mobile">
+                <li><a class="active" href="#">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="seminar.html">Seminar</a></li>
+                <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="hero" class="section flex justify-content-space-between align-items-center flex-direction-row">
         <div class="description">
             <h1 class="text-base">Mulai Berinvestasi atau mencari investor Hidroponik anda sendiri</h1>
             <p class="text-base" style="margin-top: 30px; margin-bottom: 30px;">Future Farm adalah platform untuk berinvestasi dan untuk petani hidroponik yang ingin mendapatkan modal usaha.</p>
@@ -34,7 +50,7 @@
     </section>
     <section id="feature" class="section bg-white text-center">
         <h3 class="text-base" style="font-size: 30px; padding: 50px; padding-top: 100px; margin-bottom: 30px;">Apa yang kami tawarkan?</h3>
-        <div class="container flex justify-content-space-around">
+        <div class="container flex justify-content-space-around align-items-center flex-direction-row">
             <div class="feature-items flex align-items-center flex-direction-column">
                 <div class="feature-icon flex justify-content-center align-items-center bg-warning">
                     <span class="fa fa-search-dollar fa-2x text-white"></span>
@@ -60,23 +76,23 @@
     </section>
     <section id="progress" class="section text-center">
         <h3 class="text-base" style="font-size: 30px;padding: 50px; padding-top: 50px; margin-bottom: 30px;">Perkembangan kami</h3>
-        <div class="container flex justify-content-center">
-            <div class="card flex flex-direction-column align-items-center" style="width: 350px;">
+        <div class="container flex justify-content-center align-items-center flex-direction-row">
+            <div class="progress card flex flex-direction-column align-items-center">
                 <span class="fa fa-seedling fa-5x text-primary" style="padding: 50px;"></span>
                 <span class="card-title text-base" style="padding: 10px;">1.500</span>
                 <span class="card-content text-base" style="padding: 10px; padding-bottom: 50px;">Petani Hidroponik</span>
             </div>
-            <div class="card flex flex-direction-column align-items-center" style="width: 350px;">
+            <div class="progress card flex flex-direction-column align-items-center">
                 <span class="fa fa-user-tie fa-5x text-danger" style="padding: 50px;"></span>
                 <span class="card-title text-base" style="padding: 10px;">256</span>
                 <span class="card-content text-base" style="padding: 10px; padding-bottom: 50px;">Investor</span>
             </div>
-            <div class="card flex flex-direction-column align-items-center" style="width: 350px;">
+            <div class="progress card flex flex-direction-column align-items-center">
                 <span class="fa fa-money-check-alt fa-5x text-warning" style="padding: 50px;"></span>
                 <span class="card-title text-base" style="padding: 10px;">Rp. 10 M</span>
                 <span class="card-content text-base" style="padding: 10px; padding-bottom: 50px;">Dana dikelola</span>
             </div>
-            <div class="card flex flex-direction-column align-items-center" style="width: 350px;">
+            <div class="progress card flex flex-direction-column align-items-center">
                 <span class="fa fa-clipboard fa-5x text-base" style="padding: 50px;"></span>
                 <span class="card-title text-base" style="padding: 10px;">52</span>
                 <span class="card-content text-base" style="padding: 10px; padding-bottom: 50px;">Dinas menjadi mitra</span>
@@ -89,7 +105,7 @@
         <a href="#" class="btn btn-large bg-primary text-white" style="margin: auto; margin-top: 40px;">Tentang Kami</a>
     </section>
     <footer class="flex flex-wrap align-self-flex-start justify-content-space-between">
-        <div class="footer-logo flex align-items-center text-white">
+        <div class="footer-logo flex align-items-center text-white flex-direction-row">
             <img class="footer-brand-logo" src="img/logo/logo.png" alt="ff-logo">
             <span class="footer-brand-text"><strong>Future</strong> Farm</span>
         </div>

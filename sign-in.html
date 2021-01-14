@@ -9,27 +9,43 @@
     <title>Future Farm | Beranda</title>
 </head>
 <body>
-    <nav class="navbar flex justify-content-space-between align-items-center">
-        <div class="nav-brand flex align-items-center">
-            <img class="brand-logo" src="img/logo/logo.png" alt="ff-logo">
-            <span class="brand-text"><strong>Future</strong> Farm</span>
-        </div>
-        <ul class="nav-links flex justify-content-space-between align-items-center">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a href="seminar.html">Seminar</a></li>
-            <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
-        </ul>
-    </nav>
-    <section id="signin" class="section flex justify-content-space-between align-items-center">
-        <div class="description-login" style="margin-top: -200px;">
-            <h1 class="text-base" style="font-size: 60px;">Selamat Datang<br>Kembali!</h1>
+    <div class="nav">
+        <nav class="navbar flex justify-content-space-between align-items-center">
+            <div class="nav-brand flex align-items-center">
+                <img class="brand-logo" src="img/logo/logo.png" alt="ff-logo">
+                <span class="brand-text"><strong>Future</strong> Farm</span>
+            </div>
+            <ul class="nav-links flex justify-content-space-between align-items-center">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="seminar.html">Seminar</a></li>
+                <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
+            </ul>
+            <div class="burger-menu flex">
+                <div class="burger-menu-strip"></div>
+                <div class="burger-menu-strip"></div>
+                <div class="burger-menu-strip"></div>
+            </div>
+        </nav>
+        <nav class="navbar-mobile">
+            <ul class="nav-mobile">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="seminar.html">Seminar</a></li>
+                <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="signin" class="section flex justify-content-space-between align-items-center flex-direction-row" style="margin-top: 400px;">
+        <div class="description-login" style="margin-top: -200px; margin-bottom: 100px; flex-grow: 3;">
+            <h1 class="text-base" style="font-size: 40px;">Selamat Datang<br>Kembali!</h1>
         </div>
     
-        <div class="card flex flex-direction-column align-items-center" style="margin-top: 0%; margin-bottom: 150px; margin-right: 0px; padding-bottom: 80px;">
-            <h1 style="padding-top: 60px; padding-bottom: 70px; ">Masuk</h1>
-            <form style="padding-left: 40px; padding-right: 40px;">
+        <div class="card flex flex-direction-column align-items-center justify-content-center" style="margin-top: 0%; margin-bottom: 150px; margin-right: 0px; padding-bottom: 80px; padding-left: 40px; padding-right: 40px; max-width: 800px; flex-grow: 1;">
+            <h2 style="padding-top: 60px; padding-bottom: 70px;">Masuk</h2>
+            <form style="width: 100%;">
                 <table style="width: 100%;">
                     <tr>
                         <th class="label-form flex align-self-flex-start text-base">
@@ -52,8 +68,7 @@
                         </td>
                     </tr>
                 </table>
-            
-                <div>
+                <div style="width: 100%;">
                     <a href="#" id="link-hover" class="label-form text-primary ">Lupa Password?</a>
                     <a href="#" class="btn btn-form bg-primary text-white" style="margin: auto; margin-top: 60px; margin-bottom: 50px;">MASUK SEKARANG</a>
                     <a href="sign-up.html" id="link-hover" class="label-form text-primary flex justify-content-center">Belum punya akun? Klik link untuk daftar.</a>

@@ -9,19 +9,35 @@
     <title>Future Farm | Seminar</title>
 </head>
 <body>
-    <nav class="navbar flex justify-content-space-between align-items-center">
-        <div class="nav-brand flex align-items-center">
-            <img class="brand-logo" src="img/logo/logo.png" alt="ff-logo">
-            <span class="brand-text"><strong>Future</strong> Farm</span>
-        </div>
-        <ul class="nav-links flex justify-content-space-between align-items-center">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a class="active" href="seminar.html">Seminar</a></li>
-            <li><a href="tentang-kami.html">Tentang Kami</a></li>
-            <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
-        </ul>
-    </nav>
+    <div class="nav">
+        <nav class="navbar flex justify-content-space-between align-items-center">
+            <div class="nav-brand flex align-items-center">
+                <img class="brand-logo" src="img/logo/logo.png" alt="ff-logo">
+                <span class="brand-text"><strong>Future</strong> Farm</span>
+            </div>
+            <ul class="nav-links flex justify-content-space-between align-items-center">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a class="active" href="#">Seminar</a></li>
+                <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
+            </ul>
+            <div class="burger-menu flex">
+                <div class="burger-menu-strip"></div>
+                <div class="burger-menu-strip"></div>
+                <div class="burger-menu-strip"></div>
+            </div>
+        </nav>
+        <nav class="navbar-mobile">
+            <ul class="nav-mobile">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a class="active" href="#">Seminar</a></li>
+                <li><a href="tentang-kami.html">Tentang Kami</a></li>
+                <li><a class="btn btn-round bg-white text-base" href="sign-in.html">Masuk</a></li>
+            </ul>
+        </nav>
+    </div>
     <section id="hero" class="section flex flex-wrap justify-content-space-between align-items-center" style="margin-bottom: 200px;">
         <div class="description">
             <h1 class="text-base">Seminar Rutin</h1>
@@ -35,7 +51,7 @@
 
         <h3 class="text-base text-center" style="width: 100%; font-size: 30px;padding: 50px; padding-top: 200px; margin-bottom: 30px;">Seminar Kami</h3>
 
-        <div class="flex flex-wrap align-items-left" style="margin: auto;">
+        <div class="flex flex-wrap justify-content-center" style="margin: auto;">
             <div class="card flex-direction-column align-items-left align-content-space-between" style="width: 450px; margin: 20px;">
                 <div class="card-cap">
                     <img src="img/seminar-cover.jpg" alt="cover-seminar" style="max-width: 100%;">
